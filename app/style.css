@@ -8,7 +8,6 @@
     --footer-background: #423362;
     --footer-text-color: #EDECF1;}
 
-
     /* spacing */
     /* --spacing-unit: 1rem; */
 
@@ -55,6 +54,10 @@
     .sidenav>div>a {
         text-decoration: none !important;
         color: var(--primary-color) !important;
+    }
+
+    .sidenav {
+        margin-top: 70px !important;
     }
 
     .content {
