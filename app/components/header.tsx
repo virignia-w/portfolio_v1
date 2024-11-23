@@ -1,11 +1,15 @@
 import React from "react";
+import Image from "next/image"
+import logo from "../public/LOGO.png"
 
 
 export default function Header() {
     return <>
         <nav className="navbar navbar-expand-lg nabvar-dark bg-dark fixed-top ">
             <div className="container-fluid">
-                <a className="navbar-brand" href="#"> <img src="../image/LOGO.png" /></a>
+                <div>
+                    <a className="navbar-brand" href="#"> <Image className="logo" src={logo} sizes="(max-width: 50px)" alt="logo" /> </a>
+                </div>
 
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#linkbar">
                     <span className="navbar-toggler-icon"></span>

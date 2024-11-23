@@ -43,8 +43,8 @@
         background-color: var(--accent-color);
     }
 
-    .navbar-brand img {
-        width: 50px;
+    .navbar-brand Image {
+        width: 50px !important;
     }
 
     .navbar-collapse {
