@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../components/header";
 import Image from "next/image";
-import myPic from "../public/myPic.jpg";
+import myPic from "../public/myPic.png";
 import figma from "../public/figma.png";
 import xd from "../public/xd.png";
 import ps from "../public/ps.png";
@@ -17,8 +17,8 @@ export default function Page() {
 
       <div className="greeting">
          <div className="row photo">
-            <div className="col-4 w-100">
-               <Image className="mypic" src={myPic} alt="my pictute" />
+            <div className="col-4">
+               <Image className="mypic" src={myPic} style={{width:(416), height:(416)}} alt="my pictute" />
             </div>
             <div className="col-8">
                <h2>Hi, I'm Virginia</h2>
@@ -26,13 +26,12 @@ export default function Page() {
             </div>
          </div>
       </div>
-      <div className="story">
+      <div className="intro">
          <div className="mystory">
             <div className="col-3">
                <h2>My Story</h2>
             </div>
             <div className="col-9">
-               <h2>Hi, I'm Virginia</h2>
                <p> I am passionate about studying users, competitors, and the market to design user-friendly products. I
                   enjoy collaborating with a team to create exceptional products.
 
