@@ -19,11 +19,20 @@
     --font-weight-bold: 800;*/
 
 
-    .navbar {
+    .container-fluid{
+        height: 123px !important;
+        padding: 0 !important;
         background: rgb(66, 51, 98) !important;
         background: linear-gradient(0deg, rgba(66, 51, 98, 0) 0%, rgba(66, 51, 98, 0.3) 8%, rgba(66, 51, 98, 1) 14%, rgba(66, 51, 98, 1) 19%, rgba(66, 51, 98, 1) 42%, rgba(66, 51, 98, 1) 100%) !important;
 
     }
+
+    /* .navbar {
+        height: auto !important;
+        background: rgb(66, 51, 98) !important;
+        background: linear-gradient(0deg, rgba(66, 51, 98, 0) 0%, rgba(66, 51, 98, 0.3) 8%, rgba(66, 51, 98, 1) 14%, rgba(66, 51, 98, 1) 19%, rgba(66, 51, 98, 1) 42%, rgba(66, 51, 98, 1) 100%) !important;
+
+    } */
 
     nav {
         height: 70px;
@@ -44,7 +53,7 @@
     }
 
     .navbar-brand Image {
-        width: 50px !important;
+        width: 70px !important;
     }
 
     .navbar-collapse {
