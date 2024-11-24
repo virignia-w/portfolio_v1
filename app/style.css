@@ -70,3 +70,10 @@
         color: var(--footer-text-color) !important;
         background-color: var(--primary-color) !important;
     }
+
+    /* About Page */
+
+    .mypic {
+        display: flex;
+        width: 148px !important;
+    }
