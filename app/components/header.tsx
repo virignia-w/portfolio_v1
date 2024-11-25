@@ -5,7 +5,7 @@ import logo from "../public/LOGO.png"
 
 export default function Header() {
     return <>
-        <nav className="navbar navbar-expand-lg nabvar-dark bg-dark fixed-top ">
+        <nav className="navbar navbar-expand-lg nabvar-dark fixed-top ">
             <div className="container-fluid">
                 <div>
                     <a className="navbar-brand" href="#"> <Image className="logo" src={logo} style={{width:70, height:45}} alt="logo" /> </a>

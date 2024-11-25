@@ -1,17 +1,27 @@
 import React from "react";
 import Header from "../components/header";
+import homeBG from "../public/homeBac.png"
+import Image from "next/image";
 
 export default function Page() {
-    return <>
-     <Header />
+   return <>
+      <Header />
+      <div className="homeBodyCont">
+         <div className="homeBGContainer">
+            <Image className="homeBG" fill src={homeBG} objectFit={'contain'} alt="home page background" />
+         </div>
+         <div className="GreetingComtainer">
+            <span className="homeGreeting">Hey</span>
+            <span className="homeGreeting">there,</span>
+            <span className="homeGreeting">I'm</span>
+            <span className="homeGreeting">Virginia</span>
+         </div>
+      </div>
 
-     
 
+      <footer className="container-fluid text-center ">
+         <p>&copy 2024 Virignia Wang</p>
+      </footer>
 
-
- <footer className="container-fluid text-center ">
-    <p>&copy 2024 Virignia Wang</p>
- </footer>
-
-    </>
-  }
+   </>
+}

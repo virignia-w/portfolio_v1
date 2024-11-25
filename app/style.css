@@ -11,35 +11,40 @@
     /* spacing 1rem=16px*/ 
     --space-gap: 2rem;
     --space-between-section: 120px;
+
+      /* typography */
+      --font-family: "Mada, Labrada";
+      --font-size-h1: 48px;
+      --font-size-h2: 32px;
+      --font-size-h3: 28px;
+      --font-size-p1: 24px;
+      --font-size-p2: 20px;
+      --font-weight-regular: 400;
+      --font-weight-medium: 500;
+      --font-weight-semibold: 600;
+      --font-weight-bold: 700;
+
 }
 
 
-    body{
-        max-height: 100vh;
-        overflow: hidden;
-    }
-    /* typography */
-    /* --font-family: "";
-    --font-size-base: 24px;
-    --font-size-heading: 48px;
-    --font-weight-regular: 400;
-    --font-weight-bold: 800;*/
+  
 
 
-    .container-fluid{
+    /* .container-fluid{
         height: 123px !important;
         padding: 0 !important;
         background: rgb(66, 51, 98) !important;
         background: linear-gradient(0deg, rgba(66, 51, 98, 0) 0%, rgba(66, 51, 98, 0.3) 8%, rgba(66, 51, 98, 1) 14%, rgba(66, 51, 98, 1) 19%, rgba(66, 51, 98, 1) 42%, rgba(66, 51, 98, 1) 100%) !important;
 
-    }
-
-    /* .navbar {
-        height: auto !important;
-        background: rgb(66, 51, 98) !important;
-        background: linear-gradient(0deg, rgba(66, 51, 98, 0) 0%, rgba(66, 51, 98, 0.3) 8%, rgba(66, 51, 98, 1) 14%, rgba(66, 51, 98, 1) 19%, rgba(66, 51, 98, 1) 42%, rgba(66, 51, 98, 1) 100%) !important;
-
     } */
+
+    .navbar {
+        height: 124 px !important;
+        background: rgb(66, 51, 98) !important;
+        background: linear-gradient(0deg, rgba(66,51,98,0) 0%, rgba(66,51,98,0.3) 8%, rgba(66,51,98,1) 14%, rgba(66,51,98,1) 19%, rgba(66,51,98,1) 42%, rgba(66,51,98,1) 100%) !important;
+        padding: 0% !important;
+
+    }
 
     nav {
         height: 70px;
@@ -48,11 +53,13 @@
 
     li a {
         color: var(--accent-color) !important;
+        font-family: Labrada !important;
+        font-size: 24px !important;
+        font-weight: 500 !important;
     }
 
     li a:hover {
-        background-color: beige;
-        color: blueviolet;
+        color: var(--background-color);
     }
 
     .navbar-toggler {
@@ -110,30 +117,10 @@
     .homeBodyCont{
         display: flex;
         position: relative;
-        height: 100vw;
+        height: 90vh;
     }
     
     .homeBGContainer{
         height: 1024px;
         /* position: absolute; */
-    }
-    .GreetingComtainer{
-        height: 1024px;
-        display: inline-flex;
-        gap: 5px;
-    }
-
-    .GreetingComtainer span{
-        opacity: 0;
-        color: var(--primary-color);
-        animation: float-in is ease forwards;
-        animation-delay: calc(var(--index)* 1s);
-    }
-
-    @keyframes float-in {
-        to{
-            opacity: 1;
-            transform: translateY(0);
-        }
-        
     }
