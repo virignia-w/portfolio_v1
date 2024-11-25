@@ -14,7 +14,10 @@
 }
 
 
-
+    body{
+        max-height: 100vh;
+        overflow: hidden;
+    }
     /* typography */
     /* --font-family: "";
     --font-size-base: 24px;
@@ -102,4 +105,35 @@
 
     .intro mystory{
         display: flex;
+    }
+
+    .homeBodyCont{
+        display: flex;
+        position: relative;
+        height: 100vw;
+    }
+    
+    .homeBGContainer{
+        height: 1024px;
+        /* position: absolute; */
+    }
+    .GreetingComtainer{
+        height: 1024px;
+        display: inline-flex;
+        gap: 5px;
+    }
+
+    .GreetingComtainer span{
+        opacity: 0;
+        color: var(--primary-color);
+        animation: float-in is ease forwards;
+        animation-delay: calc(var(--index)* 1s);
+    }
+
+    @keyframes float-in {
+        to{
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
     }
