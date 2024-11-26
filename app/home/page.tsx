@@ -11,10 +11,7 @@ export default function Page() {
             <Image className="homeBG" fill src={homeBG} objectFit={'contain'} alt="home page background" />
          </div>
          <div className="GreetingComtainer">
-            <span className="homeGreeting">Hey</span>
-            <span className="homeGreeting">there,</span>
-            <span className="homeGreeting">I'm</span>
-            <span className="homeGreeting">Virginia</span>
+            <img className="greetingImg" src="./public/Hey.png" />
          </div>
       </div>
 
