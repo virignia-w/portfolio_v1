@@ -113,14 +113,52 @@
     .intro mystory{
         display: flex;
     }
-
+   /* home page */
     .homeBodyCont{
         display: flex;
         position: relative;
         height: 90vh;
+       
     }
     
     .homeBGContainer{
         height: 1024px;
-        /* position: absolute; */
+        z-index: -1;
+    }
+
+    .greetingComtainer{
+        /* display: flex; */
+        margin-top: 7.75rem;
+    }
+
+    .sayHi{
+        display: flex;
+    }
+    .greetingHey img{
+        height: 128px;
+    }
+    .greetingThere img{
+        height: 128px;
+    }
+    .whoIam{
+        display: flex;
+    }
+    .greetingIm img{
+        height: 66px;
+    }
+    .greetingNing img{
+        height: 156px;
+    }
+    .greetingWang img{
+        height: 156px;
+    }
+    
+    .also{
+        display: flex;
+    }
+    .greetingAlso img{
+        height: 42px;
+    }
+    .greetingVir img{
+        height: 122px;
     }
