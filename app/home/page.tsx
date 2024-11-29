@@ -10,29 +10,29 @@ export default function Page() {
 
          <div className="greetingComtainer">
             <div className="sayHi">
-               <div className="greetingHey">
+               <div className="greetingHey anima">
                   <img src="images/Hey.png" />
                </div>
-               <div className="greetingThere">
+               <div className="greetingThere anima">
                   <img src="images/there.png" />
                </div>
             </div>
             <div className="whoIam">
-               <div className="greetingIm">
+               <div className="greetingIm anima">
                   <img src="images/Im.png" />
                </div>
-               <div className="greetingNing">
+               <div className="greetingNing anima">
                   <img src="images/NING.png" />
                </div>
-               <div className="greetingWang">
+               <div className="greetingWang anima">
                   <img src="images/Wang.png" />
                </div>
             </div>
             <div className="also">
-               <div className="greetingAlso">
+               <div className="greetingAlso anima">
                   <img src="images/also.png" />
                </div>
-               <div className="greetingVir">
+               <div className="greetingVir anima">
                   <img src="images/Vir.png" />
                </div>
             </div>

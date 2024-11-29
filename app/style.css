@@ -126,6 +126,11 @@
         z-index: -1;
     }
 
+    .homeBG{
+    /* top: -1rem !important; */
+    height: max-content;
+    }
+
     .greetingComtainer{
         /* display: flex; */
         margin-top: 7.75rem;
@@ -133,32 +138,115 @@
 
     .sayHi{
         display: flex;
+        margin-left: var(--space-gap);
+        margin-top: 6rem;
     }
     .greetingHey img{
         height: 128px;
+        opacity: 0;
+        animation-name: greetingAnima;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in;
+        animation-fill-mode: forwards;
     }
     .greetingThere img{
         height: 128px;
+        margin-left: 20px;
+        opacity: 0;
+        animation-name: greetingAnima;
+        animation-delay: 1s;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in;
+        animation-fill-mode: forwards;
+       
     }
     .whoIam{
         display: flex;
+        margin-left: var(--space-gap);
+        align-items: end;
+     
     }
+
     .greetingIm img{
-        height: 66px;
+        height: 84px;
+        margin-right: 20px;
+        opacity: 0;
+        animation-name: greetingAnima;
+        animation-delay: 2s;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in;
+        animation-fill-mode: forwards;
+       
     }
     .greetingNing img{
         height: 156px;
+        margin-right: 20px;
+        opacity: 0;
+        animation-name: greetingAnima;
+        animation-delay: 3s;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in;
+        animation-fill-mode: forwards;
+        
     }
     .greetingWang img{
         height: 156px;
+        opacity: 0;
+        animation-name: greetingAnima;
+        animation-delay: 4s;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in;
+        animation-fill-mode: forwards;
     }
     
     .also{
         display: flex;
+        align-items: center;
+        margin-left: var(--space-gap);
     }
     .greetingAlso img{
-        height: 42px;
+        height: 28px;
+        opacity: 0;
+        animation-name: greetingAnima;
+        animation-delay: 5s;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in;
+        animation-fill-mode: forwards;
     }
     .greetingVir img{
         height: 122px;
+        margin-left: 20px;
+        opacity: 0;
+        animation-name: greetingAnima;
+        animation-delay: 6s;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in;
+        animation-fill-mode: forwards;
     }
+    
+    @keyframes greetingAnima{
+        0% {opacity: 0%;}
+        50% {opacity: 80%;}
+        100% {opacity: 100%;}
+    }
+
+    /* .anima{
+        opacity: 0;
+        animation-name: greetingAnima;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+    }
+
+    .greetingHey img { animation-delay: 0s; } 
+    .greetingThere img { animation-delay: 18s; }
+    .greetingIm img { animation-delay: 27s; }
+    .greetingNing img { animation-delay: 36s }
+    .greetingWang img { animation-delay: 45s; } */
