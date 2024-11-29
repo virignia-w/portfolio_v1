@@ -3,6 +3,7 @@ import Header from "../components/header";
 import homeBG from "../public/homeBac.png"
 import Image from "next/image";
 
+
 export default function Page() {
    return <>
       <Header />
@@ -37,6 +38,10 @@ export default function Page() {
                </div>
             </div>
          </div>
+         <section className="homeBtn">
+            <button className="resumeB"><i className="fa-light fa-file-pdf"></i>RESUME</button>
+            <button className="linkdinB"><i className="fa-brands fa-linkedin"></i></button>
+         </section>
 
 
          <div className="homeBGContainer">
