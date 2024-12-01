@@ -257,19 +257,44 @@ footer {
 
 .homeBtn{
     display: flex;
+    margin-top: 3rem;
 }
 .resumeB {
     width: 128px;
     height: 40px;
-    margin-left: 3rem;
-    border-color: var(--primary-color);
+    margin-left: 2rem;
+    color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
     border-radius: 10px;
     cursor: pointer;
 }
 
-.linkdinB {
+.pdfB {
+    width: 24px !important;
+    height: 24px !important;
+    color: var(--secondary-color);
+    margin-left: 4px;
+}
+
+.linkedinB, .instagramB, .behanceB{
     width: 40px;
     height: 40px;
-    /* color: var(--secondary-color); */
+    color: var(--secondary-color);
     cursor: pointer;
+    margin-left: 36px;
+}
+
+.resumeB:hover {
+    background-color: var(--primary-color);
+    color: var(--accent-colorr);
+}
+
+.linkedinB:hover{
+    color: var(--primary-color);
+}
+.instagramB:hover{
+    color: var(--primary-color);
+}
+.behanceB:hover{
+    color: var(--primary-color);
 }

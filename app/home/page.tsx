@@ -2,6 +2,8 @@ import React from "react";
 import Header from "../components/header";
 import homeBG from "../public/homeBac.png"
 import Image from "next/image";
+import { FaLinkedin, FaInstagram, FaBehance } from "react-icons/fa6";
+import { PiFilePdf } from "react-icons/pi";
 
 
 export default function Page() {
@@ -27,7 +29,7 @@ export default function Page() {
                </div>
                <div className="greetingWang anima">
                   <img src="images/Wang.png" />
-               </div>
+               </div> 
             </div>
             <div className="also">
                <div className="greetingAlso anima">
@@ -39,8 +41,10 @@ export default function Page() {
             </div>
          </div>
          <section className="homeBtn">
-            <button className="resumeB"><i className="fa-light fa-file-pdf"></i>RESUME</button>
-            <button className="linkdinB"><i className="fa-brands fa-linkedin"></i></button>
+            <button className="resumeB">RESUME<PiFilePdf className="pdfB" /></button>
+            <FaLinkedin className="linkedinB"/>
+            <FaInstagram className="instagramB"/>
+            <FaBehance className="behanceB"/>
          </section>
 
 
