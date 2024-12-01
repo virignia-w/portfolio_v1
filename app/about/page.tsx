@@ -16,23 +16,23 @@ export default function Page() {
       <Header />
 
       <div className="greeting">
-         <div className="row photo">
+         <div className="firstHi">
             <div className="col-4">
                <Image className="mypic" src={myPic} style={{width:(416), height:(416)}} alt="my pictute" />
             </div>
             <div className="col-8">
-               <h2>Hi, I'm Virginia</h2>
-               <p> Back in Taiwan, I worked as a senior motor-scooter UX Designer. Before that, I studied Product Design at university. After spending 5 years in product planning, I developed an interest in UX design, as it combines planning, design, and research. In the summer of 2023, I moved to Canada and studied UX design at St. Lawrence College and Web development at George Brown College.</p>
+               <h1 className="hello">Hi, I'm <strong>Virginia</strong></h1>
+               <p className="p1"> Back in Taiwan, I worked as a senior motor-scooter UX Designer. Before that, I studied Product Design at university. After spending 5 years in product planning, I developed an interest in UX design, as it combines planning, design, and research. In the summer of 2023, I moved to Canada and studied UX design at St. Lawrence College and Web development at George Brown College.</p>
             </div>
          </div>
       </div>
       <div className="intro">
          <div className="mystory">
             <div className="col-3">
-               <h2>My Story</h2>
+               <h1>My Story</h1>
             </div>
             <div className="col-9">
-               <p> I am passionate about studying users, competitors, and the market to design user-friendly products. I
+               <p className="p1"> I am passionate about studying users, competitors, and the market to design user-friendly products. I
                   enjoy collaborating with a team to create exceptional products.
 
                   Drawing is another passion of mine, with over 10 years of experience. Although I do not have a graphic design degree, I
@@ -43,9 +43,9 @@ export default function Page() {
          </div>
       </div>
       <div className="ecperience">
-         <div className="myexperience">
+         <div className="myExperience">
             <div className="col-3">
-               <h2>Experience</h2>
+               <h1>Experience</h1>
             </div>
             <div className="col-9">
                <ul>
@@ -58,9 +58,9 @@ export default function Page() {
       </div>
 
       <div className="ecperience">
-         <div className="myexperience">
+         <div className="myExperience">
             <div className="col-3">
-               <h2>Experience</h2>
+               <h1>Experience</h1>
             </div>
             <div className="col-9">
                <ul>
@@ -71,8 +71,8 @@ export default function Page() {
             </div>
          </div>
       </div>
-      <div className="Skills" id="Skills">
-            <h2>Skills</h2>
+      <div className="skills">
+            <h1>Skills</h1>
             <div className="skillsticker">
                 <div className="projectcard">
                     <Image src= {figma} alt="Figma"/>
@@ -104,8 +104,8 @@ export default function Page() {
                 </div>
             </div>
         </div>
-        <div className="Background">
-            <h2>Education Background</h2>
+        <div className="background">
+            <h1>Education Background</h1>
             <ul>
                 <li>
                     <p>2024-2025</p>Web Development & Front-End Design<p>George Brown College, Canada</p>
@@ -119,8 +119,8 @@ export default function Page() {
             </ul>
         </div>
 
-        <div id="contact" className="contact">
-            <h2>Contact Me</h2>
+        <div className="contact">
+            <h1>Contact Me</h1>
             
          
         </div>

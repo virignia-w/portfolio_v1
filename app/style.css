@@ -13,10 +13,12 @@
     --space-between-section: 120px;
 
     /* typography */
-    --font-family: "Mada, Labrada";
-    --font-size-h1: 48px;
-    --font-size-h2: 32px;
-    --font-size-h3: 28px;
+    --font-family-l: "Labrada";
+    --font-family-m: "Mada";
+    --font-size-h1: 52px;
+    --font-size-h2: 48px;
+    --font-size-h3: 32px;
+    --font-size-h4: 28px;
     --font-size-p1: 24px;
     --font-size-p2: 20px;
     --font-weight-regular: 400;
@@ -25,9 +27,6 @@
     --font-weight-bold: 700;
 
 }
-
-
-
 
 
 /* .container-fluid{
@@ -96,12 +95,12 @@ footer {
 
 /* About Page */
 
-.greeting {
+.greeting, .intro, .ecperience, .skills, .background, .contact{
     margin-top: 7.75rem;
-    display: flex;
+    /* display: flex; */
 }
 
-.mypic {
+.firstHi, .mystory {
     display: flex;
     margin: auto;
 }
@@ -113,6 +112,34 @@ footer {
 
 .intro mystory {
     display: flex;
+}
+
+.hello{
+    font-family: mada;
+    color: var(--primary-color);
+    font-size: var(--font-size-h1);
+    font-weight: var(--font-weight-bold);
+}
+
+.hello > strong{
+    color: var(--accent-color);
+    text-shadow: 0px 1px 1px rgb(0,0,0,25%);
+    -webkit-text-stroke: 0.2px #423362;
+}
+
+h1 {
+    font-family: var(--font-family-l);
+    font-size: var(--font-size-h1) !important;
+    font-weight: var(--font-weight-medium) !important;
+    color: var(--primary-color) !important;
+
+}
+
+.p1 {
+    font-family: var(--font-family-m);
+    font-size: var(--font-size-p1) !important;
+    font-weight: var(--font-weight-regular) !important;
+    color: var(--primary-color) !important;
 }
 
 /* home page */
