@@ -135,11 +135,28 @@ h1 {
 
 }
 
+h3{
+    font-family: var(--font-family-m);
+    font-size: var(--font-size-h3) !important;
+    font-weight: var(--font-weight-medium) !important;
+    color: var(--primary-color) !important;
+}
+
 .p1 {
     font-family: var(--font-family-m);
     font-size: var(--font-size-p1) !important;
     font-weight: var(--font-weight-regular) !important;
     color: var(--primary-color) !important;
+}
+
+.skillPic > img{
+    width: 160px;
+    height: 160px;
+}
+
+.skillsticker{
+    display: flex;
+
 }
 
 /* home page */

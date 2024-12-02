@@ -18,9 +18,6 @@ export default function Nav() {
                         <a href="#">More</a>
                     </div>
                 </div>
-                <div className="col-sm-10 main-content text-left">
-                    <h2>Transforming a College Website with User-Centered UX Strategies</h2>
-                </div>
 
             </div>
         </div>
