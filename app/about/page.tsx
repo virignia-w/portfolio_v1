@@ -35,184 +35,171 @@ export default function Page() {
             </div>
          </div>
          <div className="container-all">
-            <div className="container-fluid p-0 d-flex">
+            <div className="col-2 container-fluid p-0 m-0 d-flex">
                <div id="sideBar" className="p-3 flex-shrink-0 d-flex flex-column offcanvas-md offcanvas-start">
                   <Sidenav />
                </div>
             </div>
-            <div className="greeting firstHi">
+            <div className="container col-10">
+               <div className="greeting firstHi">
                   <Image className="mypic" src={myPic} style={{ width: (416), height: (416) }} alt="my pictute" />
-               <div className="helloCon">
-                  <h1 className="hello">Hi, I'm <strong>Virginia</strong></h1>
-                  <p className="p1"> Back in Taiwan, I worked as a <strong>senior motor-scooter UX Designer.</strong> Before that, I studied <strong>Product Design at university.</strong><br /><br />
-                     After spending 5 years in product planning, I developed an interest in degital UX design, as it combines planning, design, and research. In the summer of 2023, I moved to Canada and studied <strong>UX design at St. Lawrence College</strong> and <strong>Web development at George Brown College.</strong></p>
-               </div>
-            </div>
-
-         </div>
-         <div className="col-11">
-            <div className="greeting">
-               <div className="firstHi">
-                  <div className="col-4">
-                     <Image className="mypic" src={myPic} style={{ width: (416), height: (416) }} alt="my pictute" />
-                  </div>
-                  <div className="col-8">
+                  <div className="helloCon">
                      <h1 className="hello">Hi, I'm <strong>Virginia</strong></h1>
                      <p className="p1"> Back in Taiwan, I worked as a <strong>senior motor-scooter UX Designer.</strong> Before that, I studied <strong>Product Design at university.</strong><br /><br />
                         After spending 5 years in product planning, I developed an interest in degital UX design, as it combines planning, design, and research. In the summer of 2023, I moved to Canada and studied <strong>UX design at St. Lawrence College</strong> and <strong>Web development at George Brown College.</strong></p>
                   </div>
                </div>
-            </div>
-            <div className="intro">
-               <div className="mystory">
-                  <div className="col-3">
-                     <h1>My Story</h1>
-                  </div>
-                  <div className="col-9">
-                     <p className="p1"> I am <strong>passionate about studying users, competitors, and the market</strong> to <strong>design user-friendly products.</strong> I
-                        <strong>enjoy collaborating with a team</strong> to create exceptional products.<br /><br />
-
-                        <strong>Drawing</strong> is another passion of mine, with over <strong>10 years of experience.</strong> Although I do not have a graphic design degree, I
-                        am confident in my aesthetic abilities.<br /><br />
-                        Now, I am ready to contribute my skills as a web designer.</p>
-                  </div>
-               </div>
-            </div>
-            <div className="ecperience">
-               <div className="myExperience">
-                  <div className="col-3">
-                     <h1>Experience</h1>
-                  </div>
-                  <div className="col-9">
-                     <ul>
-                        <li>Sales Associate</li>
-                        <li>Product planner/UX designer</li>
-                        <li>Design Assistant/ Customer Service</li>
-                     </ul>
-                  </div>
-               </div>
-            </div>
-
-            <div className="skills">
-               <h1>UX Skills & PM Tools</h1>
-               <div className="skillsticker">
-                  <div className="skillPic">
-                     <Image src={competitor} alt="Competitor Scan" />
-                  </div>
-                  <div className="skillPic">
-                     <Image src={research} alt="Consumer Research" />
-                  </div>
-                  <div className="skillPic">
-                     <Image src={persona} alt="Persona/ Scenario" />
-                  </div>
-                  <div className="skillPic">
-                     <Image src={mapping} alt="Function/Empathy Mapping" />
-                  </div>
-                  <div className="skillPic">
-                     <Image src={test} alt="Usability Testing" />
-                  </div>
-                  <div className="skillPic">
-                     <Image src={present} alt="Presentations" />
-                  </div>
-               </div>
-            </div>
-            <div className="skills">
-               <h1>Design Tools</h1>
-               <div className="skillsticker">
-                  <div className="skillPic">
-                     <Image src={figma} alt="Figma" />
-                     <h3>Figma</h3>
-                  </div>
-                  <div className="skillPic">
-                     <Image src={xd} alt="Adobe XD" />
-                     <h3>Adobe XD</h3>
-                  </div>
-                  <div className="skillPic">
-                     <Image src={ps} alt="Photoshop" />
-                     <h3>Photoshop</h3>
-                  </div>
-                  <div className="skillPic">
-                     <Image src={ai} alt="Illustrator" />
-                     <h3>Illustrator</h3>
-                  </div>
-                  <div className="skillPic">
-                     <Image src={id} alt="Indesign" />
-                     <h3>Indesign</h3>
-                  </div>
-                  <div className="skillPic">
-                     <Image src={ppt} alt="PowerPoint" />
-                     <h3>PowerPoint</h3>
-                  </div>
-                  <div className="skillPic">
-                     <Image src={canva} alt="Canva" />
-                     <h3>Canva</h3>
-                  </div>
-               </div>
-            </div>
-            <div className="skills">
-               <h1>Development Tools</h1>
-               <div className="skillsticker">
-                  <div className="skillPic">
-                     <Image src={html} alt="HTML" />
-                     <h3>HTML</h3>
-                  </div>
-                  <div className="skillPic">
-                     <Image src={css} alt="CSS" />
-                     <h3>CSS</h3>
-                  </div>
-                  <div className="skillPic">
-                     <Image src={js} alt="JavaScript" />
-                     <h3>JavaScript</h3>
-                  </div>
-                  <div className="skillPic">
-                     <Image src={npm} alt="npm" />
-                     <h3>npm</h3>
-                  </div>
-                  <div className="skillPic">
-                     <Image src={react} alt="React" />
-                     <h3>React</h3>
-                  </div>
-               </div>
-            </div>
-            <div className="background">
-               <h1>Education Background</h1>
-               <ul>
-                  <li>
-                     <p>2024-2025</p>Web Development & Front-End Design<p>George Brown College, Canada</p>
-                  </li>
-                  <li>
-                     <p>2023-2024</p>UX Design<p>St. Lawrence College, Canada</p>
-                  </li>
-                  <li>
-                     <p>2011-2015</p>Bachelor of Design in Product Design<p>Ming Chuan University (MCU), Taiwan</p>
-                  </li>
-               </ul>
-            </div>
-
-            <div className="contact">
-               <h1>Contact Me</h1>
-               <div className="contactCon">
-                  <div className="col-5">
-                     <p className="p1">Hey! If you're interested in working with me or would like more details, feel free to reach out to me! </p>
-                  </div>
-                  <div className="col-5 contactBCon">
-                     <div><IoMail className="emailB" />ning93315@gmail.com
+               <div className="intro">
+                  <div className="mystory">
+                     <div className="col-3">
+                        <h1>My Story</h1>
                      </div>
-                     <div>
-                        <FaLinkedin className="linkedinB" />
-                        <FaInstagram className="instagramB" />
-                        <FaBehance className="behanceB" />
+                     <div className="col-9">
+                        <p className="p1"> I am <strong>passionate about studying users, competitors, and the market</strong> to <strong>design user-friendly products.</strong> I
+                           <strong>enjoy collaborating with a team</strong> to create exceptional products.<br /><br />
+
+                           <strong>Drawing</strong> is another passion of mine, with over <strong>10 years of experience.</strong> Although I do not have a graphic design degree, I
+                           am confident in my aesthetic abilities.<br /><br />
+                           Now, I am ready to contribute my skills as a web designer.</p>
+                     </div>
+                  </div>
+               </div>
+               <div className="ecperience">
+                  <div className="myExperience">
+                     <div className="col-3">
+                        <h1>Experience</h1>
+                     </div>
+                     <div className="col-9">
+                        <ul>
+                           <li>Sales Associate</li>
+                           <li>Product planner/UX designer</li>
+                           <li>Design Assistant/ Customer Service</li>
+                        </ul>
                      </div>
                   </div>
                </div>
 
+               <div className="skills">
+                  <h1>UX Skills & PM Tools</h1>
+                  <div className="skillsticker">
+                     <div className="skillPic">
+                        <Image src={competitor} alt="Competitor Scan" />
+                     </div>
+                     <div className="skillPic">
+                        <Image src={research} alt="Consumer Research" />
+                     </div>
+                     <div className="skillPic">
+                        <Image src={persona} alt="Persona/ Scenario" />
+                     </div>
+                     <div className="skillPic">
+                        <Image src={mapping} alt="Function/Empathy Mapping" />
+                     </div>
+                     <div className="skillPic">
+                        <Image src={test} alt="Usability Testing" />
+                     </div>
+                     <div className="skillPic">
+                        <Image src={present} alt="Presentations" />
+                     </div>
+                  </div>
+               </div>
+               <div className="skills">
+                  <h1>Design Tools</h1>
+                  <div className="skillsticker">
+                     <div className="skillPic">
+                        <Image src={figma} alt="Figma" />
+                        <h3>Figma</h3>
+                     </div>
+                     <div className="skillPic">
+                        <Image src={xd} alt="Adobe XD" />
+                        <h3>Adobe XD</h3>
+                     </div>
+                     <div className="skillPic">
+                        <Image src={ps} alt="Photoshop" />
+                        <h3>Photoshop</h3>
+                     </div>
+                     <div className="skillPic">
+                        <Image src={ai} alt="Illustrator" />
+                        <h3>Illustrator</h3>
+                     </div>
+                     <div className="skillPic">
+                        <Image src={id} alt="Indesign" />
+                        <h3>Indesign</h3>
+                     </div>
+                     <div className="skillPic">
+                        <Image src={ppt} alt="PowerPoint" />
+                        <h3>PowerPoint</h3>
+                     </div>
+                     <div className="skillPic">
+                        <Image src={canva} alt="Canva" />
+                        <h3>Canva</h3>
+                     </div>
+                  </div>
+               </div>
+               <div className="skills">
+                  <h1>Development Tools</h1>
+                  <div className="skillsticker">
+                     <div className="skillPic">
+                        <Image src={html} alt="HTML" />
+                        <h3>HTML</h3>
+                     </div>
+                     <div className="skillPic">
+                        <Image src={css} alt="CSS" />
+                        <h3>CSS</h3>
+                     </div>
+                     <div className="skillPic">
+                        <Image src={js} alt="JavaScript" />
+                        <h3>JavaScript</h3>
+                     </div>
+                     <div className="skillPic">
+                        <Image src={npm} alt="npm" />
+                        <h3>npm</h3>
+                     </div>
+                     <div className="skillPic">
+                        <Image src={react} alt="React" />
+                        <h3>React</h3>
+                     </div>
+                  </div>
+               </div>
+               <div className="background">
+                  <h1>Education Background</h1>
+                  <ul>
+                     <li>
+                        <p>2024-2025</p>Web Development & Front-End Design<p>George Brown College, Canada</p>
+                     </li>
+                     <li>
+                        <p>2023-2024</p>UX Design<p>St. Lawrence College, Canada</p>
+                     </li>
+                     <li>
+                        <p>2011-2015</p>Bachelor of Design in Product Design<p>Ming Chuan University (MCU), Taiwan</p>
+                     </li>
+                  </ul>
+               </div>
 
+               <div className="contact">
+                  <h1>Contact Me</h1>
+                  <div className="contactCon">
+                     <div className="col-5">
+                        <p className="p1">Hey! If you're interested in working with me or would like more details, feel free to reach out to me! </p>
+                     </div>
+                     <div className="col-5 contactBCon">
+                        <div><IoMail className="emailB" />ning93315@gmail.com
+                        </div>
+                        <div>
+                           <FaLinkedin className="linkedinB" />
+                           <FaInstagram className="instagramB" />
+                           <FaBehance className="behanceB" />
+                        </div>
+                     </div>
+                  </div>
+
+
+               </div>
             </div>
          </div>
-
-         <footer className="container-fluid text-center ">
-            <p>&copy 2024 Virignia Wang</p>
-         </footer>
       </div>
+
+      <footer className="container-fluid text-center ">
+         <p>&copy 2024 Virignia Wang</p>
+      </footer>
    </>
 }

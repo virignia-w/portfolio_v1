@@ -377,8 +377,10 @@ h3{
 }
 
 #sideBar {
-    height: 100vh;
+    height: 100vw;
     width: 216px;
+    position: sticky;
+    top: 0;
     background-color: var(--secondary-color)!important;
 }
 
