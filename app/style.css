@@ -2,6 +2,7 @@
     /* color-scheme: ; */
     --primary-color: #423362;
     --secondary-color: #7B7091;
+    --light-color: #BAB4C6;
     --accent-color: #FFC857;
     --text-color: #423362;
     --background-color: #EDECF1;
@@ -93,6 +94,10 @@ footer {
     background-color: var(--primary-color) !important;
 }
 
+
+
+
+
 /* About Page */
 
 .greeting, .intro, .ecperience, .skills, .background, .contact{
@@ -113,9 +118,7 @@ footer {
     width: 416px;
     height: 416px;
 }
-.intro mystory {
-    display: flex;
-}
+
 
 .hello{
     font-family: mada;
@@ -171,6 +174,7 @@ h3{
 
 .skillsticker{
     display: flex;
+    overflow: auto;
     margin-top: 3rem;
 }
 
@@ -378,11 +382,17 @@ h3{
 
 #sideBar {
     height: 100vw;
-    width: 216px;
+    width: 100%;
     position: sticky;
     top: 0;
-    background-color: var(--secondary-color)!important;
+    background-color: var(--light-color)!important;
+ 
 }
+
+#sideBar > div > a{
+    color: var(--primary-color) !important;
+    text-decoration: none !important;
+} 
 
 .container-all{
     display: flex !important;

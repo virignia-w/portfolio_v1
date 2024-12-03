@@ -36,19 +36,22 @@ export default function Page() {
          </div>
          <div className="container-all">
             <div className="col-2 container-fluid p-0 m-0 d-flex">
-               <div id="sideBar" className="p-3 flex-shrink-0 d-flex flex-column offcanvas-md offcanvas-start">
+               
                   <Sidenav />
-               </div>
+               
             </div>
-            <div className="container col-10">
-               <div className="greeting firstHi">
-                  <Image className="mypic" src={myPic} style={{ width: (416), height: (416) }} alt="my pictute" />
-                  <div className="helloCon">
-                     <h1 className="hello">Hi, I'm <strong>Virginia</strong></h1>
-                     <p className="p1"> Back in Taiwan, I worked as a <strong>senior motor-scooter UX Designer.</strong> Before that, I studied <strong>Product Design at university.</strong><br /><br />
-                        After spending 5 years in product planning, I developed an interest in degital UX design, as it combines planning, design, and research. In the summer of 2023, I moved to Canada and studied <strong>UX design at St. Lawrence College</strong> and <strong>Web development at George Brown College.</strong></p>
+            <div className="container col-10 p-0 ms-2">
+               <div className="container p-0 ms-0 greeting">
+                  <div className="row firstHi">
+                     <Image className="mypic col-6" src={myPic} style={{ width: (416), height: (416) }} alt="my pictute" />
+                     <div className="helloCon col-6">
+                        <h1 className="hello">Hi, I'm <strong>Virginia</strong></h1>
+                        <p className="p1"> Back in Taiwan, I worked as a <strong>senior motor-scooter UX Designer.</strong> Before that, I studied <strong>Product Design at university.</strong><br /><br />
+                           After spending 5 years in product planning, I developed an interest in degital UX design, as it combines planning, design, and research. In the summer of 2023, I moved to Canada and studied <strong>UX design at St. Lawrence College</strong> and <strong>Web development at George Brown College.</strong></p>
+                     </div>
                   </div>
                </div>
+
                <div className="intro">
                   <div className="mystory">
                      <div className="col-3">
