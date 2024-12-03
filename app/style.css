@@ -100,7 +100,7 @@ footer {
     /* display: flex; */
 }
 
-.firstHi, .mystory {
+.firstHi, .mystory, .contactCon {
     display: flex;
     margin: auto;
 }
@@ -109,7 +109,10 @@ footer {
     display: flex;
     margin-top: var(--space-between-section);
 }
-
+.myPicCon{
+    width: 416px;
+    height: 416px;
+}
 .intro mystory {
     display: flex;
 }
@@ -122,6 +125,11 @@ footer {
 }
 
 .hello > strong{
+    color: var(--accent-color);
+    text-shadow: 0px 1px 1px rgb(0,0,0,25%);
+    -webkit-text-stroke: 0.2px #423362;
+}
+p> strong{
     color: var(--accent-color);
     text-shadow: 0px 1px 1px rgb(0,0,0,25%);
     -webkit-text-stroke: 0.2px #423362;
@@ -140,6 +148,7 @@ h3{
     font-size: var(--font-size-h3) !important;
     font-weight: var(--font-weight-medium) !important;
     color: var(--primary-color) !important;
+    text-align: center ;
 }
 
 .p1 {
@@ -152,11 +161,35 @@ h3{
 .skillPic > img{
     width: 160px;
     height: 160px;
+    margin-bottom: 1.5rem;
+}
+
+.skillPic{
+    margin-right: 2rem;
+    align-content: center;
 }
 
 .skillsticker{
     display: flex;
+    margin-top: 3rem;
+}
 
+.emailB {
+    width: 40px;
+    height: 40px;
+    color: var(--secondary-color);
+    margin-left: 36px;
+    margin-right: 1rem;
+}
+
+
+.contactBCon{
+    display: flex;
+    flex-direction: column;
+}
+
+.mainCon {
+    margin: 0 !important;
 }
 
 /* home page */
@@ -320,7 +353,7 @@ h3{
     margin-left: 4px;
 }
 
-.linkedinB, .instagramB, .behanceB{
+.linkedinB, .instagramB, .behanceB {
     width: 40px;
     height: 40px;
     color: var(--secondary-color);
@@ -341,4 +374,15 @@ h3{
 }
 .behanceB:hover{
     color: var(--primary-color);
+}
+
+#sideBar {
+    height: 100vh;
+    width: 216px;
+    background-color: var(--secondary-color)!important;
+}
+
+.container-all{
+    display: flex !important;
+    align-items: stretch;
 }

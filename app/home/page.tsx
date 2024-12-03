@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../components/header";
-import Sidenav from "../components/sidemav";
+import Sidenav from "../components/sidenav";
 import homeBG from "../public/homeBac.png"
 import Image from "next/image";
 import { FaLinkedin, FaInstagram, FaBehance } from "react-icons/fa6";
@@ -10,7 +10,6 @@ import { PiFilePdf } from "react-icons/pi";
 export default function Page() {
    return <>
       <Header />
-      <Sidenav />
 
       <div className="homeBodyCont">
 

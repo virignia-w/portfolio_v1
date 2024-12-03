@@ -5,8 +5,7 @@ import logo from "../public/LOGO.png"
 
 export default function Header() {
     return <>
-        <nav className="navbar navbar-expand-lg nabvar-dark fixed-top ">
-            <div className="container-fluid">
+        <nav className="navbar navbar-expand-lg mb-0 ">
                 <div>
                     <a className="navbar-brand" href="#"> <Image className="logo" src={logo} style={{width:70, height:45}} alt="logo" /> </a>
                 </div>
@@ -30,8 +29,6 @@ export default function Header() {
                         </li>
                     </ul>
                 </div>
-
-            </div>
         </nav>
 
     </>
