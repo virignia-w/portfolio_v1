@@ -53,7 +53,7 @@ export default function Page() {
                </div>
 
                <div className="container p-0 ms-0 intro">
-                  <div className="row mystory">
+                  <div className="row mystory storyRow">
                      <div className="col-3">
                         <h1>My Story</h1>
                      </div>
@@ -81,7 +81,7 @@ export default function Page() {
                      </div>
                   </div>
                </div>
-
+               <hr />
                <div className="container p-0 ms-0 skills">
                   <div className="row">
                      <h1>UX Skills & PM Tools</h1>
@@ -108,7 +108,7 @@ export default function Page() {
                   </div>
                </div>
                <div className="container p-0 ms-0 skills">
-                  <div className="row">
+                  <div className="row DesignRow">
                      <h1>Design Tools</h1>
                      <div className="skillsticker">
                         <div className="skillPic">
@@ -169,6 +169,7 @@ export default function Page() {
                      </div>
                   </div>
                </div>
+               <hr />
                <div className="container p-0 ms-0 background">
                   <div className="row">
                      <h1>Education Background</h1>
@@ -190,12 +191,12 @@ export default function Page() {
                      </div>
                   </div>
                </div>
-
+               <hr />
                <div className=" container p-0 ms-0 contact">
-                  <div className="row">
+                  <div className="row contactRow">
                      <h1>Contact Me</h1>
                      <div className="contactCon">
-                        <div className="col-5">
+                        <div className="col-7">
                            <p className="p1">Hey! If you're interested in working with me or would like more details, feel free to reach out to me! </p>
                         </div>
                         <div className="col-5 contactBCon">
