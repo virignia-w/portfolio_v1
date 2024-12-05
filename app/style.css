@@ -21,17 +21,17 @@ html {
 
     /* spacing 1rem=16px*/
     --space-gap: 2rem;
-    --space-between-section: 120px;
+    --space-between-section: 100px;
 
     /* typography */
     --font-family-l: "Labrada";
     --font-family-m: "Mada";
-    --font-size-h1: 52px;
-    --font-size-h2: 48px;
-    --font-size-h3: 32px;
-    --font-size-h4: 28px;
-    --font-size-p1: 24px;
-    --font-size-p2: 20px;
+    --font-size-h1: 48px;
+    --font-size-h2: 32px;
+    --font-size-h3: 24px;
+    --font-size-h4: 20px;
+    --font-size-p1: 16px;
+    --font-size-p2: 14px;
     --font-weight-regular: 400;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
@@ -49,6 +49,15 @@ html {
     background: rgb(66, 51, 98) !important;
     background: linear-gradient(0deg, rgba(66, 51, 98, 0) 0%, rgba(66, 51, 98, 0.3) 8%, rgba(66, 51, 98, 1) 14%, rgba(66, 51, 98, 1) 19%, rgba(66, 51, 98, 1) 42%, rgba(66, 51, 98, 1) 100%) !important;
     padding: 0% !important;
+    
+
+}
+
+#myHeader{
+    /* position: -webkit-sticky; */
+    /* position: fixed;
+    top: 0;
+    height: auto; */
 
 }
 
@@ -116,6 +125,29 @@ li a:hover {
     margin-top: 70px;
 }
 
+#sideBar {
+    /* height: 100%; */
+    width: 100%;
+    /* position: -webkit-sticky; */
+    position: sticky;
+    top: 0;
+    background-color: var(--light-color) !important;
+    margin-top: -1rem;
+    z-index: -1;
+
+}
+
+#sideBar>div>a {
+    color: var(--primary-color) !important;
+    text-decoration: none !important;
+    
+}
+
+.container-all {
+    display: flex !important;
+    align-items: stretch;
+}
+
 footer {
     min-height: 36px;
     color: var(--footer-text-color) !important;
@@ -127,6 +159,11 @@ footer {
 
 
 /* About Page */
+
+.allContent{
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+}
 
 .greeting,
 .intro,
@@ -151,7 +188,7 @@ footer {
     margin-top: var(--space-between-section);
 }
 
-.myPicCon {
+.myPic {
     width: 416px;
     height: 416px;
 }
@@ -200,7 +237,6 @@ h3 {
 }
 
 .skillPic>img {
-    width: 100%;
     max-width: 160px;
     height: auto;
     margin-bottom: 1.5rem;
@@ -237,6 +273,29 @@ h3 {
     margin: 0 !important;
 }
 
+.GBC, .SLC, .MCU {
+    display: flex;
+    gap: 3rem;
+}
+
+.h3Ubderline{
+    text-decoration: underline;
+    text-align: left !important;
+}
+.school {
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: left !important;
+}
+
+
+
+
+
+
+
+
 /* home page */
 .homeBodyCont {
     display: flex;
@@ -252,13 +311,13 @@ h3 {
 }
 
 .homeBG {
-    top: -3rem !important;
+    top: -4rem !important;
     height: max-content;
 }
 
 .greetingComtainer {
     /* display: flex; */
-    margin-top: 7.75rem;
+    margin-top: 2rem;
 }
 
 .sayHi {
@@ -426,21 +485,3 @@ h3 {
     color: var(--primary-color);
 }
 
-#sideBar {
-    height: 100%;
-    width: 100%;
-    position: sticky;
-    top: 0;
-    background-color: var(--light-color) !important;
-
-}
-
-#sideBar>div>a {
-    color: var(--primary-color) !important;
-    text-decoration: none !important;
-}
-
-.container-all {
-    display: flex !important;
-    align-items: stretch;
-}
