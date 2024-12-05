@@ -57,7 +57,7 @@ export default function Page() {
 
 
       <footer className="container-fluid text-center ">
-         <p>&copy 2024 Virignia Wang</p>
+         <p>&copy; 2024 Virignia Wang</p>
       </footer>
 
    </>

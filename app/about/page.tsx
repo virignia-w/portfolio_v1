@@ -216,7 +216,7 @@ export default function Page() {
       </div>
 
       <footer className="container-fluid text-center ">
-         <p> &copy 2024 Virignia Wang</p>
+         <p>&copy; 2024 Virignia Wang</p>
       </footer>
    </>
 }

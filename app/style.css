@@ -134,13 +134,27 @@ li a:hover {
     background-color: var(--light-color) !important;
     margin-top: -1rem;
     z-index: -1;
+}
 
+#navBar{
+    width: 100%;
+    /* position: -webkit-sticky; */
+    position: sticky;
+    top: 0;
+    background-color: var(--light-color) !important;
+    margin-top: -1rem;
+    z-index: -1;
 }
 
 #sideBar>div>a {
     color: var(--primary-color) !important;
     text-decoration: none !important;
     
+}
+
+#navBar > div >a {
+    color: var(--primary-color) !important;
+    text-decoration: none !important;
 }
 
 .container-all {
@@ -510,3 +524,53 @@ h3 {
     color: var(--primary-color);
 }
 
+
+
+
+
+
+
+/* project */
+
+.projectsCon{
+    gap: 2rem;
+    padding: 2rem !important;
+    align-items: center;
+}
+
+.projectRow{
+    display: flex;
+    width: 80%;
+    /* height: 200px; */
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    /* opacity: 0.5; 初始透明度 */
+    transform: scale(0.9); /* 初始縮小 */
+}
+
+.project.active {
+    /* opacity: 1; 完全顯示 */
+    transform: scale(1.1); /* 放大 */
+}
+
+.projectPic img {
+    width: auto;
+    height: 348px;
+}
+
+.projectRow{
+    margin-bottom: 7.75rem !important;
+}
+
+.projectText{
+    display: flex;
+    flex-direction: column;
+}
+.projectText h3{
+    text-align: left;
+}
+
+.projectText video{
+    margin-top: 1rem;
+}

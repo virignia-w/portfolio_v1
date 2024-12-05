@@ -10,7 +10,7 @@ export default function Page() {
      <h1>Project</h1>
      
  <footer className="container-fluid text-center ">
-    <p>&copy 2024 Virignia Wang</p>
+    <p>&copy; 2024 Virignia Wang</p>
  </footer>
 
     </>
