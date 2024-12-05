@@ -28,19 +28,19 @@ import { IoMail } from "react-icons/io5";
 export default function Page() {
    return <>
 
-      <div id="container">
-         <div className="row">
+      <div id="container m-0 p-0 gx-0">
+         <div className="row ">
             <div className="col-12">
                <Header />
             </div>
          </div>
          <div className="container-all">
-            <div className="col-2 container-fluid p-0 m-0 d-flex">
+            <div className="col-2 container p-0 m-0 d-flex">
                
                   <Sidenav />
                
             </div>
-            <div className="container col-10 p-0 ms-2">
+            <div className="container col-10 p-2 m-0">
                <div className="container p-0 ms-0 greeting">
                   <div className="row firstHi">
                      <Image className="mypic col-6" src={myPic} style={{ width: (416), height: (416) }} alt="my pictute" />
@@ -202,7 +202,7 @@ export default function Page() {
       </div>
 
       <footer className="container-fluid text-center ">
-         <p>&copy 2024 Virignia Wang</p>
+         <p> &copy 2024 Virignia Wang</p>
       </footer>
    </>
 }

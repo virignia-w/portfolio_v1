@@ -1,11 +1,25 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
+import { usePathname, useRouter } from "next/navigation";
 import Image from "next/image"
 import logo from "../public/LOGO.png"
 
 
+
 export default function Header() {
+    const pathname = usePathname();
+    const router = useRouter();
+
+    useEffect(()=> {
+        // function directToLoginPage() {
+            if (pathname === "/") {
+                router.replace("/home");
+            }
+    }, [pathname]);
+    
+    
     return <>
-        <nav className="navbar navbar-expand-lg mb-0 ">
+        <nav className="navbar navbar-expand-lg mb-0">
                 <div>
                     <a className="navbar-brand" href="#"> <Image className="logo" src={logo} style={{width:70, height:45}} alt="logo" /> </a>
                 </div>

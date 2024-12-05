@@ -1,3 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    overflow-x: hidden;
+}
+
 :root {
     /* color-scheme: ; */
     --primary-color: #423362;
@@ -30,16 +40,12 @@
 }
 
 
-/* .container-fluid{
-        height: 123px !important;
-        padding: 0 !important;
-        background: rgb(66, 51, 98) !important;
-        background: linear-gradient(0deg, rgba(66, 51, 98, 0) 0%, rgba(66, 51, 98, 0.3) 8%, rgba(66, 51, 98, 1) 14%, rgba(66, 51, 98, 1) 19%, rgba(66, 51, 98, 1) 42%, rgba(66, 51, 98, 1) 100%) !important;
-
-    } */
 
 .navbar {
-    height: 124 px !important;
+    /* height: 124 px !important; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background: rgb(66, 51, 98) !important;
     background: linear-gradient(0deg, rgba(66, 51, 98, 0) 0%, rgba(66, 51, 98, 0.3) 8%, rgba(66, 51, 98, 1) 14%, rgba(66, 51, 98, 1) 19%, rgba(66, 51, 98, 1) 42%, rgba(66, 51, 98, 1) 100%) !important;
     padding: 0% !important;
@@ -68,6 +74,28 @@ li a:hover {
 
 .navbar-brand {
     margin-left: 2rem !important;
+    order: -1;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .navbar-brand {
+        margin-left: 1rem !important;
+        order: -1 !important;
+    }
+
+    .navbar-toggler {
+        background-color: var(--accent-color);
+        /* 可以設置漢堡選單的顏色 */
+    }
+
+    .navbar-collapse {
+        justify-content: flex-end;
+        /* 確保當漢堡選單展開時，選單項目排列在右邊 */
+    }
 }
 
 .navbar-collapse {
@@ -89,7 +117,7 @@ li a:hover {
 }
 
 footer {
-    height: 36px;
+    min-height: 36px;
     color: var(--footer-text-color) !important;
     background-color: var(--primary-color) !important;
 }
@@ -100,41 +128,51 @@ footer {
 
 /* About Page */
 
-.greeting, .intro, .ecperience, .skills, .background, .contact{
+.greeting,
+.intro,
+.ecperience,
+.skills,
+.background,
+.contact {
     margin-top: 7.75rem;
     /* display: flex; */
 }
 
-.firstHi, .mystory, .contactCon {
+.firstHi,
+.mystory,
+.contactCon {
     display: flex;
     margin: auto;
+    padding: 0;
 }
 
 .intro {
     display: flex;
     margin-top: var(--space-between-section);
 }
-.myPicCon{
+
+.myPicCon {
     width: 416px;
     height: 416px;
 }
 
 
-.hello{
+.hello {
     font-family: mada;
     color: var(--primary-color);
     font-size: var(--font-size-h1);
     font-weight: var(--font-weight-bold);
 }
 
-.hello > strong{
+.hello>strong {
     color: var(--accent-color);
-    text-shadow: 0px 1px 1px rgb(0,0,0,25%);
+    text-shadow: 0px 1px 1px rgb(0, 0, 0, 25%);
     -webkit-text-stroke: 0.2px #423362;
 }
-p> strong{
+
+p>strong {
     color: var(--accent-color);
-    text-shadow: 0px 1px 1px rgb(0,0,0,25%);
+    text-shadow: 0px 1px 1px rgb(0, 0, 0, 25%);
     -webkit-text-stroke: 0.2px #423362;
 }
 
@@ -146,12 +184,12 @@ h1 {
 
 }
 
-h3{
+h3 {
     font-family: var(--font-family-m);
     font-size: var(--font-size-h3) !important;
     font-weight: var(--font-weight-medium) !important;
     color: var(--primary-color) !important;
-    text-align: center ;
+    text-align: center;
 }
 
 .p1 {
@@ -161,18 +199,21 @@ h3{
     color: var(--primary-color) !important;
 }
 
-.skillPic > img{
-    width: 160px;
-    height: 160px;
+.skillPic>img {
+    width: 100%;
+    max-width: 160px;
+    height: auto;
     margin-bottom: 1.5rem;
+
+    /* 小螢幕上要max-width: 100% */
 }
 
-.skillPic{
+.skillPic {
     margin-right: 2rem;
     align-content: center;
 }
 
-.skillsticker{
+.skillsticker {
     display: flex;
     overflow: auto;
     margin-top: 3rem;
@@ -187,7 +228,7 @@ h3{
 }
 
 
-.contactBCon{
+.contactBCon {
     display: flex;
     flex-direction: column;
 }
@@ -336,10 +377,11 @@ h3{
     }
 }
 
-.homeBtn{
+.homeBtn {
     display: flex;
     margin-top: 3rem;
 }
+
 .resumeB {
     width: 128px;
     height: 40px;
@@ -357,7 +399,9 @@ h3{
     margin-left: 4px;
 }
 
-.linkedinB, .instagramB, .behanceB {
+.linkedinB,
+.instagramB,
+.behanceB {
     width: 40px;
     height: 40px;
     color: var(--secondary-color);
@@ -370,31 +414,33 @@ h3{
     color: var(--accent-colorr);
 }
 
-.linkedinB:hover{
+.linkedinB:hover {
     color: var(--primary-color);
 }
-.instagramB:hover{
+
+.instagramB:hover {
     color: var(--primary-color);
 }
-.behanceB:hover{
+
+.behanceB:hover {
     color: var(--primary-color);
 }
 
 #sideBar {
-    height: 100vw;
+    height: 100%;
     width: 100%;
     position: sticky;
     top: 0;
-    background-color: var(--light-color)!important;
- 
+    background-color: var(--light-color) !important;
+
 }
 
-#sideBar > div > a{
+#sideBar>div>a {
     color: var(--primary-color) !important;
     text-decoration: none !important;
-} 
+}
 
-.container-all{
+.container-all {
     display: flex !important;
     align-items: stretch;
 }
