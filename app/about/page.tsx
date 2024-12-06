@@ -194,7 +194,7 @@ export default function Page() {
                </div>
                <hr />
                <div className=" container p-0 ms-0 contact">
-                  <div className="row contactRow">
+                  <div className="row contactRow" id="contact">
                      <Contact />
                   </div>
                </div>
