@@ -23,12 +23,13 @@ import test from "../public/testing.png";
 import present from "../public/present.png";
 import { FaLinkedin, FaInstagram, FaBehance } from "react-icons/fa6";
 import { IoMail } from "react-icons/io5";
+import Contact from "../components/contact";
 
 
 export default function Page() {
    return <>
 
-      <div id="container m-0 p-0 gx-0">
+      <div id="container wrapper m-0 p-0 gx-0">
          <div className="row ">
             <div className="col-12" id="myHeader">
                <Header />
@@ -40,7 +41,7 @@ export default function Page() {
                <Sidenav />
 
             </div>
-            <div className="container allContent col-10 m-0">
+            <div className="container allContent col-10">
                <div className="container p-0 ms-0 greeting">
                   <div className="row firstHi">
                      <Image className="mypic col-6" src={myPic} style={{ width: (416), height: (416) }} alt="my pictute" />
@@ -194,29 +195,17 @@ export default function Page() {
                <hr />
                <div className=" container p-0 ms-0 contact">
                   <div className="row contactRow">
-                     <h1>Contact Me</h1>
-                     <div className="contactCon">
-                        <div className="col-7">
-                           <p className="p1">Hey! If you're interested in working with me or would like more details, feel free to reach out to me! </p>
-                        </div>
-                        <div className="col-5 contactBCon">
-                           <div><IoMail className="emailB" />ning93315@gmail.com
-                           </div>
-                           <div>
-                              <FaLinkedin className="linkedinB" />
-                              <FaInstagram className="instagramB" />
-                              <FaBehance className="behanceB" />
-                           </div>
-                        </div>
-                     </div>
+                     <Contact />
                   </div>
                </div>
             </div>
          </div>
+         <div className="row footerRow">
+            <footer className="container-fluid text-center ">
+               <p>&copy; 2024 Virignia Wang</p>
+            </footer>
+         </div>
       </div>
 
-      <footer className="container-fluid text-center ">
-         <p>&copy; 2024 Virignia Wang</p>
-      </footer>
    </>
 }

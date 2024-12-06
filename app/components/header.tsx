@@ -39,7 +39,7 @@ export default function Header() {
                             <a className="nav-link" href="/about">About Me</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/contact">Contact</a>
+                            <a className="nav-link" href="/components/contact">Contact</a>
                         </li>
                     </ul>
                 </div>

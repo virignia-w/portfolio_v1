@@ -1,31 +1,55 @@
 "use client";
 import React, { use } from "react";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef} from "react";
 import Header from "../components/header";
 import Nav from "../components/nav";
-// import "./project.css";
+import { recordTraceEvents } from "next/dist/trace";
 
 export default function Page() {
-   const [activeIndex, setActiveIndex] = useState<number | null>(null);
+   const [activeIndex, setActiveIndex] = useState(0);
+  const projectsRef = useRef(null);
 
-   useEffect(() => {
-      const handleScroll = () => {
-         const projects = document.querySelectorAll<HTMLDivElement>(".projectRow");
-         const windowHeight = window.innerHeight;
+  const projects = [
+   {
+     title: "Transforming a College Website with User-Centered UX Strategies",
+     img: "images/project/workshop.png",
+     video: "images/project/PDrecord.mov",
+   },
+   {
+     title: "Optimising User Experience: Reorganizing the UI Layout of a College Website",
+     img: "images/project/IWKB.png",
+     video: "images/project/IWKBvideo.mov",
+   },
+   {
+     title: "A Beginner-friendly Recipe App",
+     img: "images/project/cook.png",
+     video: "images/project/PDrecord.mov",
+   },
+ ];
 
-         projects.forEach((project, index) => {
-            const rect = project.getBoundingClientRect();
-            const midScreen = windowHeight / 2;
-
-            if (rect.top < midScreen && rect.bottom > midScreen) {
-               setActiveIndex(index);
-            }
-         });
-      };
-
-      window.addEventListener("scroll", handleScroll);
-      return () => window.removeEventListener("scroll", handleScroll);
-   }, []);
+ useEffect(() => {
+   const container = document.querySelector(".projectsCon"); // 確保選到正確的滾動容器
+   const handleScroll = () => {
+     const scrollTop = container.scrollTop || window.scrollY; // 根據滾動容器獲取滾動高度
+     const projectRows = document.querySelectorAll(".projectRow");
+ 
+     projectRows.forEach((row, index) => {
+      const offsetTop = (row as HTMLElement).offsetTop - scrollTop;
+ 
+       if (offsetTop < window.innerHeight / 2 && offsetTop > 0) {
+         row.classList.add("active");
+       } else {
+         row.classList.remove("active");
+       }
+     });
+   };
+ 
+   container.addEventListener("scroll", handleScroll);
+ 
+   return () => {
+     container.removeEventListener("scroll", handleScroll);
+   };
+ }, []);
 
    return <>
 
@@ -39,7 +63,7 @@ export default function Page() {
             <div className="col-2 container p-0 m-0 d-flex">
                <Nav />
             </div>
-            <div className="projectsCon col-10 m-0">
+            <div className="projectsCon col-10">
                {[
                   {
                      title: "Transforming a College Website with User-Centered UX Strategie",
@@ -79,10 +103,5 @@ export default function Page() {
          </div>
       </div>
  
-
-
-      <footer className="container-fluid text-center ">
-         <p>&copy; 2024 Virignia Wang</p>
-      </footer>
    </>
 }

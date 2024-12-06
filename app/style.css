@@ -6,6 +6,7 @@
 body,
 html {
     overflow-x: hidden;
+    height: 100%;
 }
 
 :root {
@@ -53,13 +54,14 @@ html {
 
 }
 
-/* #myHeader{ */
-    /* position: -webkit-sticky; */
-    /* position: fixed;
+#myHeader{
+    position: fixed;
     top: 0;
-    height: auto; */
+    left: 0;
+    z-index: 1;
+    padding: 0;
 
-/* } */
+} 
 
 nav {
     height: 70px;
@@ -126,24 +128,19 @@ li a:hover {
 }
 
 #sideBar {
-    /* height: 100%; */
+  
     width: 100%;
-    /* position: -webkit-sticky; */
-    position: sticky;
-    top: 0;
+  
+    
     background-color: var(--light-color) !important;
-    margin-top: -1rem;
-    z-index: -1;
+    
 }
 
 #navBar{
     width: 100%;
-    /* position: -webkit-sticky; */
-    position: sticky;
-    top: 0;
+    
     background-color: var(--light-color) !important;
-    margin-top: -1rem;
-    z-index: -1;
+   
 }
 
 #sideBar>div>a {
@@ -159,24 +156,45 @@ li a:hover {
 
 .container-all {
     display: flex !important;
+    margin-top: 70px;
     align-items: stretch;
+    height: calc(100vh - 70px)
+}
+
+.col-2 {
+    position: fixed;
+    width: 16.666%;
+    left: 0;
+    top: 65px; /* Sticky 開始點，與 Header 高度對齊 */
+    height:100%; /* 確保內容高度適配視窗 */
+    overflow: hidden;
+    z-index: -1;
+
 }
 
 footer {
     min-height: 36px;
     color: var(--footer-text-color) !important;
     background-color: var(--primary-color) !important;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
 }
 
 
 
-
-
 /* About Page */
-
+.wrapper{
+    min-height: 100%; /*外層高度100%*/
+    margin-bottom: -36px; /*隨footer高度需做調整*/
+}
 .allContent{
-    padding-left: 2rem !important;
-    padding-right: 2rem !important;
+    padding:0 2rem 2rem 2rem !important;
+    align-items: center;
+    /* overflow: scroll; */
+    /* height: 100%; 占滿剩下的垂直空間 */
+    width: 83.334% !important; 
+    margin-left: 16.666% !important;
 }
 
 .greeting,
@@ -187,6 +205,10 @@ footer {
 .contact {
     margin-top: 7.75rem;
     /* display: flex; */
+}
+
+.contact{
+    margin-bottom: 3rem;
 }
 
 .contactRow, .DesignRow, .storyRow{
@@ -208,7 +230,7 @@ footer {
     margin: auto;
     padding: 0;
     margin-top: 3rem !important;
-    margin-bottom: 3rem !important;
+    
     
 }
 
@@ -533,35 +555,36 @@ h3 {
 /* project */
 
 .projectsCon{
-    gap: 2rem;
     padding: 2rem !important;
     align-items: center;
+    overflow: scroll;
+    overflow-y: auto;
+    height: calc(100vh - 70px); /* 減去 header 的高度 */
+    width: 83.334% !important; 
+    margin-left: 16.666% !important;
 }
 
 .projectRow{
     display: flex;
-    width: 80%;
-    /* height: 200px; */
     align-items: center;
     justify-content: center;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    margin-bottom: 7.75rem !important;
+    transition: all 0.3s ease ease-in-out;
     /* opacity: 0.5; 初始透明度 */
-    transform: scale(0.9); /* 初始縮小 */
+    transform: scale(0.9) translateY(20px); /* 初始縮小 */
 }
 
 .project.active {
-    /* opacity: 1; 完全顯示 */
-    transform: scale(1.1); /* 放大 */
+    opacity: 1; /*完全顯示*/
+    transform: scale(1) translateY(0);
 }
+
 
 .projectPic img {
     width: auto;
     height: 348px;
 }
 
-.projectRow{
-    margin-bottom: 7.75rem !important;
-}
 
 .projectText{
     display: flex;
