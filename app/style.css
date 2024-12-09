@@ -128,10 +128,7 @@ li a:hover {
 }
 
 #sideBar {
-  
-    width: 100%;
-  
-    
+      width: 100%;
     background-color: var(--light-color) !important;
     
 }
@@ -142,16 +139,36 @@ li a:hover {
     background-color: var(--light-color) !important;
    
 }
+.sidebar-option{
+    margin-top: .5rem !important;
+    margin-bottom: .5rem !important;
+}
 
 #sideBar>div>a {
     color: var(--primary-color) !important;
     text-decoration: none !important;
+    font-family: var(--font-family-l);
+    font-size: var(--font-size-h4);
+    cursor: pointer; 
+    pointer-events: none;
+    
     
 }
 
 #navBar > div >a {
     color: var(--primary-color) !important;
     text-decoration: none !important;
+    font-family: var(--font-family-l);
+    font-size: var(--font-size-h4);
+    cursor: pointer; 
+    pointer-events: none;
+}
+
+.navDigitalDesign {
+    background-image: url("/public/images/menubc.png") !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+
 }
 
 .container-all {
@@ -196,6 +213,7 @@ footer {
     width: 83.334% !important; 
     margin-left: 16.666% !important;
 }
+
 
 .greeting,
 .intro,

@@ -69,7 +69,7 @@ export default function Page() {
                   </div>
                </div>
                <div className="container p-0 ms-0 ecperience">
-                  <div className="row myExperience">
+                  <div className="row myExperience" id="experience">
                      <div className="col-3">
                         <h1>Experience</h1>
                      </div>
@@ -84,7 +84,7 @@ export default function Page() {
                </div>
                <hr />
                <div className="container p-0 ms-0 skills">
-                  <div className="row">
+                  <div className="row" id="skill">
                      <h1>UX Skills & PM Tools</h1>
                      <div className="skillsticker">
                         <div className="skillPic">
@@ -172,7 +172,7 @@ export default function Page() {
                </div>
                <hr />
                <div className="container p-0 ms-0 background">
-                  <div className="row">
+                  <div className="row" id="education">
                      <h1>Education Background</h1>
                      <div className="GBC">
                         <p className="p1">2024-2025</p>

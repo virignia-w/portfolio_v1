@@ -101,6 +101,11 @@ export default function Page() {
                </div>
             
          </div>
+         <div className="row footerRow">
+            <footer className="container-fluid text-center ">
+               <p>&copy; 2024 Virignia Wang</p>
+            </footer>
+         </div>
       </div>
  
    </>
