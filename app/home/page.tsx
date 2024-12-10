@@ -5,7 +5,6 @@ import homeBG from "../public/homeBac.png"
 import Image from "next/image";
 import { FaLinkedin, FaInstagram, FaBehance } from "react-icons/fa6";
 import { PiFilePdf } from "react-icons/pi";
-import { IconContext } from "react-icons";
 
 
 export default function Page() {

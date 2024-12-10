@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    overflow-x: hidden;
+    height: 100%;
+}
+
+:root {
+    /* color-scheme: ; */
+    --primary-color: #423362;
+    --secondary-color: #7B7091;
+    --light-color: #BAB4C6;
+    --accent-color: #FFC857;
+    --text-color: #423362;
+    --background-color: #EDECF1;
+    --footer-background: #423362;
+    --footer-text-color: #EDECF1;
+
+    /* spacing 1rem=16px*/
+    --space-gap: 2rem;
+    --space-between-section: 100px;
+
+    /* typography */
+    --font-family-l: "Labrada";
+    --font-family-m: "Mada";
+    --font-size-h1: 36px;
+    --font-size-h2: 28px;
+    --font-size-h3: 24px;
+    --font-size-h4: 20px;
+    --font-size-p1: 18px;
+    --font-size-p2: 14px;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+}
+
+.allContent {
+    padding: 0 2rem 2rem 2rem !important;
+    align-items: center;
+    width: 83.334% !important;
+    margin-left: 16.666% !important;
+}
+
+.workHead-card,
+.work-mainPic,
+.work-objective,
+.work-bcg,
+.work-task,
+.work-action {
+    margin-bottom: 7.5rem !important;
+}
+
+.workHead-card {
+    border: solid;
+    border-color: var(--secondary-colorr) !important;
+    border-radius: 12px;
+    border-width: 2px;
+    width: auto;
+    height: 300px;
+    padding: 3rem !important;
+    align-items: center !important;
+    margin: 2rem !important;
+
+}
+
+.workHead-card>h1 {
+    font-family: var(--font-family-m);
+    color: var(--primary-color);
+    font-size: var(--font-size-h1);
+}
+
+.workHead-card>h2 {
+    font-family: var(--font-family-m);
+    color: var(--accent-color);
+    font-size: var(--font-size-h2);
+}
+
+.work-mainPic>img {
+    height: 596px;
+    width: 80%;
+}
+
+.work-objective {
+    display: flex;
+    justify-content: space-between;
+}
+
+.date {
+    display: flex;
+    flex-direction: column;
+    height: 416px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.role {
+    display: flex;
+    flex-direction: column;
+    height: 416px;
+    width: 100%;
+    background-color: rgb(123, 112, 145, 0.1);
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.work-reach {
+    margin-top: 7.75rem;
+    /* display: flex; */
+    margin-bottom: 7.5rem;
+    background-color: rgba(123, 112, 145, 0.1);
+    height: auto;
+    width: 100%;
+}
+
+.contactCon {
+    display: flex;
+    margin: auto;
+    padding: 0;
+    margin-top: 3rem !important;
+    margin-bottom: 7.5rem !important;
+}
+
+
+.emailB {
+    width: 40px;
+    height: 40px;
+    color: var(--secondary-color);
+    margin-left: 36px;
+    margin-right: 1rem;
+}
+
+
+.contactBCon {
+    display: flex;
+    flex-direction: column;
+}
+
+.pdfB {
+    width: 24px !important;
+    height: 24px !important;
+    color: var(--secondary-color);
+    margin-left: 4px;
+}
+
+.linkedinB,
+.instagramB,
+.behanceB {
+    width: 40px;
+    height: 40px;
+    color: var(--secondary-color);
+    cursor: pointer;
+    margin-left: 36px;
+}
+
+
+.linkedinB:hover {
+    color: var(--primary-color);
+}
+
+.instagramB:hover {
+    color: var(--primary-color);
+}
+
+.behanceB:hover {
+    color: var(--primary-color);
+}

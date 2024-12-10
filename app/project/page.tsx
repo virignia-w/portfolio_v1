@@ -14,16 +14,19 @@ export default function Page() {
      title: "Transforming a College Website with User-Centered UX Strategies",
      img: "images/project/workshop.png",
      video: "images/project/PDrecord.mov",
+     link: "/works",
    },
    {
      title: "Optimising User Experience: Reorganizing the UI Layout of a College Website",
      img: "images/project/IWKB.png",
      video: "images/project/IWKBvideo.mov",
+     link: "#",
    },
    {
      title: "A Beginner-friendly Recipe App",
      img: "images/project/cook.png",
      video: "images/project/PDrecord.mov",
+      link: "#",
    },
  ];
 
@@ -69,16 +72,19 @@ export default function Page() {
                      title: "Transforming a College Website with User-Centered UX Strategie",
                      img: "images/project/workshop.png",
                      video: "images/project/PDrecord.mov",
+                     link: "/works",
                   },
                   {
                      title: "Optimising User Experience: Reorganizing the UI Layout of a College Website",
                      img: "images/project/IWKB.png",
                      video: "images/project/IWKBvideo.mov",
+                     link: "#",
                   },
                   {
                      title: "A Beginner-friendly recipe App",
                      img: "images/project/cook.png",
                      video: "images/project/PDrecord.mov",
+                     link: "#",
                   },
                ].map((project, index) => (
                   <div
@@ -87,8 +93,13 @@ export default function Page() {
                         }`}
                   >
                      <div className="projectText col-4">
+                        <a href="/works">work</a>
                         <p className="p1">UX/UI</p>
-                        <h3>{project.title}</h3>
+                        <h3>
+                           <a href={project.link} style={{ textDecoration: "none", color: "inherit" }}>
+                              {project.title}
+                           </a>
+                        </h3>
                         <video width="152" height="132" controls>
                            <source src={project.video} type="video/mp4" />
                         </video>
