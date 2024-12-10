@@ -27,11 +27,11 @@ html {
     /* typography */
     --font-family-l: "Labrada";
     --font-family-m: "Mada";
-    --font-size-h1: 48px;
-    --font-size-h2: 32px;
+    --font-size-h1: 36px;
+    --font-size-h2: 28px;
     --font-size-h3: 24px;
     --font-size-h4: 20px;
-    --font-size-p1: 16px;
+    --font-size-p1: 18px;
     --font-size-p2: 14px;
     --font-weight-regular: 400;
     --font-weight-medium: 500;
@@ -50,18 +50,20 @@ html {
     background: rgb(66, 51, 98) !important;
     background: linear-gradient(0deg, rgba(66, 51, 98, 0) 0%, rgba(66, 51, 98, 0.3) 8%, rgba(66, 51, 98, 1) 14%, rgba(66, 51, 98, 1) 19%, rgba(66, 51, 98, 1) 42%, rgba(66, 51, 98, 1) 100%) !important;
     padding: 0% !important;
-    
+    position: relative;
+    z-index: 10;
+
 
 }
 
-#myHeader{
+#myHeader {
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1;
     padding: 0;
 
-} 
+}
 
 nav {
     height: 70px;
@@ -76,21 +78,36 @@ li a {
 }
 
 li a:hover {
-    color: var(--background-color);
+    color: var(--background-color) !important;
 }
 
 .navbar-toggler {
-    background-color: var(--accent-color);
+    background-color: var(--accent-color) !important;
+    cursor: pointer;
+    pointer-events: auto;
+
 }
 
 .navbar-brand {
-    margin-left: 2rem !important;
+    margin-left: 1rem !important;
     order: -1;
 }
 
+.navbar-collapse {
+    transition: height 0.3s ease-in-out;
+    z-index: 9;
+    justify-content: end;
+}
+
 @media (max-width: 768px) {
+    
+    nav {
+    height: 70px;
+    justify-content: right !important;
+}
     .navbar {
         justify-content: space-between;
+        height: 70px;
     }
 
     .navbar-brand {
@@ -104,13 +121,12 @@ li a:hover {
     }
 
     .navbar-collapse {
+        display: flex;
+        /* 確保展開後的菜單可見 */
+        flex-direction: column;
         justify-content: flex-end;
         /* 確保當漢堡選單展開時，選單項目排列在右邊 */
     }
-}
-
-.navbar-collapse {
-    justify-content: end;
 }
 
 .sidenav>div>a {
@@ -128,18 +144,19 @@ li a:hover {
 }
 
 #sideBar {
-      width: 100%;
+    width: 100%;
     background-color: var(--light-color) !important;
-    
+
 }
 
-#navBar{
+#navBar {
     width: 100%;
-    
+
     background-color: var(--light-color) !important;
-   
+
 }
-.sidebar-option{
+
+.sidebar-option {
     margin-top: .5rem !important;
     margin-bottom: .5rem !important;
 }
@@ -149,18 +166,18 @@ li a:hover {
     text-decoration: none !important;
     font-family: var(--font-family-l);
     font-size: var(--font-size-h4);
-    cursor: pointer; 
+    cursor: pointer;
     pointer-events: none;
-    
-    
+
+
 }
 
-#navBar > div >a {
+#navBar>div>a {
     color: var(--primary-color) !important;
     text-decoration: none !important;
     font-family: var(--font-family-l);
     font-size: var(--font-size-h4);
-    cursor: pointer; 
+    cursor: pointer;
     pointer-events: none;
 }
 
@@ -182,8 +199,10 @@ li a:hover {
     position: fixed;
     width: 16.666%;
     left: 0;
-    top: 65px; /* Sticky 開始點，與 Header 高度對齊 */
-    height:100%; /* 確保內容高度適配視窗 */
+    top: 65px;
+    /* Sticky 開始點，與 Header 高度對齊 */
+    height: 100%;
+    /* 確保內容高度適配視窗 */
     overflow: hidden;
     z-index: -1;
 
@@ -191,6 +210,7 @@ li a:hover {
 
 footer {
     min-height: 36px;
+    width: 100%;
     color: var(--footer-text-color) !important;
     background-color: var(--primary-color) !important;
     z-index: 1;
@@ -201,16 +221,19 @@ footer {
 
 
 /* About Page */
-.wrapper{
-    min-height: 100%; /*外層高度100%*/
-    margin-bottom: -36px; /*隨footer高度需做調整*/
+.wrapper {
+    min-height: 100%;
+    /*外層高度100%*/
+    margin-bottom: -36px;
+    /*隨footer高度需做調整*/
 }
-.allContent{
-    padding:0 2rem 2rem 2rem !important;
+
+.allContent {
+    padding: 0 2rem 2rem 2rem !important;
     align-items: center;
     /* overflow: scroll; */
     /* height: 100%; 占滿剩下的垂直空間 */
-    width: 83.334% !important; 
+    width: 83.334% !important;
     margin-left: 16.666% !important;
 }
 
@@ -225,17 +248,19 @@ footer {
     /* display: flex; */
 }
 
-.contact{
+.contact {
     margin-bottom: 7.5rem;
 }
 
-.contactRow, .DesignRow, .storyRow{
-    background-color: rgba(123,112,145, 0.1);
+.contactRow,
+.DesignRow,
+.storyRow {
+    background-color: rgba(123, 112, 145, 0.1);
     height: auto;
     width: 100%;
 }
 
-.contactRow{
+.contactRow {
     margin-bottom: 7.5rem;
 }
 
@@ -246,17 +271,17 @@ footer {
     padding: 0;
 }
 
-.contactCon{
+.contactCon {
     display: flex;
     margin: auto;
     padding: 0;
     margin-top: 3rem !important;
     margin-bottom: 7.5rem !important;
-    
-    
+
+
 }
 
-hr{
+hr {
     margin-top: var(--space-between-section) !important;
     margin-bottom: var(--space-between-section) !important;
 }
@@ -287,13 +312,14 @@ hr{
 
 p>strong {
     color: var(--accent-color);
+    font-weight: 500;
     text-shadow: 0px 1px 1px rgb(0, 0, 0, 25%);
     -webkit-text-stroke: 0.2px #423362;
 }
 
-.helloCon > p{
+.helloCon>p {
     margin-top: 3rem !important;
-} 
+}
 
 h1 {
     font-family: var(--font-family-l);
@@ -355,20 +381,23 @@ h3 {
     margin: 0 !important;
 }
 
-.GBC, .SLC, .MCU {
+.GBC,
+.SLC,
+.MCU {
     display: flex;
     gap: 3rem;
     margin-top: 3rem !important;
 }
 
-.h3Ubderline{
+.h3Ubderline {
     text-decoration: underline;
     text-align: left !important;
 }
+
 .school {
     display: flex;
     flex-direction: column;
-    
+
     justify-content: left !important;
 }
 
@@ -525,13 +554,21 @@ h3 {
 }
 
 .resumeB {
-    width: 128px;
+    display: flex;
+    width: 150px;
     height: 40px;
     margin-left: 2rem;
+    /* padding: 4px; */
+    justify-content: center;
+    align-items: center;
     color: var(--primary-color) !important;
     border-color: var(--primary-color) !important;
     border-radius: 10px;
     cursor: pointer;
+}
+
+.resumeP {
+    margin: 0 !important;
 }
 
 .pdfB {
@@ -552,9 +589,18 @@ h3 {
 }
 
 .resumeB:hover {
+    
+    .resumeP {
+        color: var(--accent-color)
+    }
+    .pdfB {
+        color: var(--accent-color);
+    }
+
     background-color: var(--primary-color);
-    color: var(--accent-colorr);
+    color: var(--accent-color);
 }
+
 
 .linkedinB:hover {
     color: var(--primary-color);
@@ -576,28 +622,31 @@ h3 {
 
 /* project */
 
-.projectsCon{
+.projectsCon {
     padding: 2rem !important;
     align-items: center;
     overflow: scroll;
     overflow-y: auto;
-    height: calc(100vh - 70px); /* 減去 header 的高度 */
-    width: 83.334% !important; 
+    height: calc(100vh - 70px);
+    /* 減去 header 的高度 */
+    width: 83.334% !important;
     margin-left: 16.666% !important;
 }
 
-.projectRow{
+.projectRow {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 7.75rem !important;
     transition: all 0.3s ease ease-in-out;
     /* opacity: 0.5; 初始透明度 */
-    transform: scale(0.9) translateY(20px); /* 初始縮小 */
+    transform: scale(0.9) translateY(20px);
+    /* 初始縮小 */
 }
 
 .project.active {
-    opacity: 1; /*完全顯示*/
+    opacity: 1;
+    /*完全顯示*/
     transform: scale(1) translateY(0);
 }
 
@@ -608,14 +657,15 @@ h3 {
 }
 
 
-.projectText{
+.projectText {
     display: flex;
     flex-direction: column;
 }
-.projectText h3{
+
+.projectText h3 {
     text-align: left;
 }
 
-.projectText video{
+.projectText video {
     margin-top: 1rem;
 }

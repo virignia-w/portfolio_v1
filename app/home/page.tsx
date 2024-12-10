@@ -5,6 +5,7 @@ import homeBG from "../public/homeBac.png"
 import Image from "next/image";
 import { FaLinkedin, FaInstagram, FaBehance } from "react-icons/fa6";
 import { PiFilePdf } from "react-icons/pi";
+import { IconContext } from "react-icons";
 
 
 export default function Page() {
@@ -43,7 +44,7 @@ export default function Page() {
             </div>
          </div>
          <section className="homeBtn">
-            <button className="resumeB">RESUME<PiFilePdf className="pdfB" /></button>
+            <button className="resumeB"><p className="resumeP">RESUME</p><PiFilePdf className="pdfB" /></button>
             <FaLinkedin className="linkedinB"/>
             <FaInstagram className="instagramB"/>
             <FaBehance className="behanceB"/>
