@@ -263,7 +263,10 @@ footer {
 .contactRow {
     margin-bottom: 7.5rem;
 }
-
+.myExperience {
+    display: flex;
+    flex-direction: column;
+}
 .firstHi,
 .mystory {
     display: flex;
@@ -337,11 +340,41 @@ h3 {
     text-align: center;
 }
 
+h4{
+    font-family: var(--font-family-m);
+    font-size: var(--font-size-h4) !important;
+    color: var(--text-color) !important;
+    font-weight:var(--font-weight-regular) !important;
+}
+
+.experience-text{
+    display: flex;
+    flex-direction: column !important;
+    align-items: start;
+    margin-right: 2rem;
+    margin-top: 8px;
+}
+
+.experience-text > h3 {
+    font-weight: var(--font-weight-regular) !important;
+    text-align: left !important;
+}
+
 .p1 {
     font-family: var(--font-family-m);
     font-size: var(--font-size-p1) !important;
     font-weight: var(--font-weight-regular) !important;
     color: var(--primary-color) !important;
+}
+
+.works{
+    display: flex;
+    margin-top: 3rem !important;
+}
+
+.works > div > h1{
+    text-decoration: underline !important;
+    margin-bottom: 1rem !important;
 }
 
 .skillPic>img {
