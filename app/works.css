@@ -41,31 +41,32 @@ html {
 }
 
 .allContent {
-    padding: 0 2rem 2rem 2rem !important;
+    padding: 2rem 2rem 2rem 2rem !important;
     align-items: center;
     width: 83.334% !important;
     margin-left: 16.666% !important;
+    
 }
 
-.workHead-card,
+/* .workHead-card,
 .work-mainPic,
 .work-objective,
 .work-bcg,
 .work-task,
 .work-action {
     margin-bottom: 7.5rem !important;
-}
+} */
 
 .workHead-card {
     border: solid;
     border-color: var(--secondary-colorr) !important;
     border-radius: 12px;
     border-width: 2px;
-    width: auto;
+    width: 90%;
     height: 300px;
     padding: 3rem !important;
+    margin-bottom: 3rem !important;
     align-items: center !important;
-    margin: 2rem !important;
 
 }
 
@@ -80,9 +81,13 @@ html {
     color: var(--accent-color);
     font-size: var(--font-size-h2);
 }
+.work-mainPic{
+    display: flex;
+    justify-content: center;
+}
 
 .work-mainPic>img {
-    height: 596px;
+    height: auto;
     width: 80%;
 }
 
@@ -91,12 +96,28 @@ html {
     justify-content: space-between;
 }
 
+hr {
+    color: var(--secondary-color) !important;
+    height: 3px !important;
+    width: 100% !important;
+    border: 0;
+    opacity: 1 !important;
+}
+
+.vr {
+    height: 400px !important;
+    color: var(--secondary-color) !important;
+    opacity: 1 !important;
+    width: 3px !important;
+    padding: 0 !important;
+}
+
 .date {
     display: flex;
     flex-direction: column;
     height: 416px;
     width: 100%;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
 }
 
@@ -106,9 +127,12 @@ html {
     height: 416px;
     width: 100%;
     background-color: rgb(123, 112, 145, 0.1);
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
 
+}
+.date-text{
+    font-weight: var(--font-weight-regular) !important;
 }
 
 
@@ -120,6 +144,22 @@ html {
     height: auto;
     width: 100%;
 }
+
+.work-bcg-img {
+    margin: auto !important;
+}
+
+.work-bcg-text > p {
+    margin-top: 3rem !important;
+}
+
+
+
+
+
+
+
+
 
 .contactCon {
     display: flex;
